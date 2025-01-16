@@ -1,11 +1,20 @@
-username = input('Имя пользователя: ')
-created_date = input('Введите дату в формате "дд.мм.гггг: ')  # дата создания заметки
-issue_date = input('Введите дату в формате "дд.мм.гггг: ')  # дата истечения заметки
-title = input('Заголовок заметки: ')
-content = input('Описание: ')
-status = input("Статус")
-name_text1 = input('Основной заголовок: ')
-name_text2 = input("Дополнительный заголовок: ")
-name_text1 = input('Рекомендации к заметке: ')]
-note = [username, created_date[0:5], issue_date[0:5], title, content, [name_text1, name_text2, name_text3]]
-print(note)
+note = [
+    input('Имя пользователя: '),
+    input('Введите сегодняшнюю дату в формате "дд.мм.гггг: '),
+    input('Введите срок даты в формате "дд.мм.гггг: '),
+    input('Заголовок заметки: '),
+    input('Описание: '),
+    input("Статус: "),
+    input('Основной заголовок: '),
+    input("Дополнительный заголовок: "),
+    input('Рекомендации к заметке: ')
+]
+print('Имя пользователя: ', note[0])
+print('Дата: ', note [1][0:5])
+print('Срок: ', note [2][0:5])
+print('Заголовок заметки: ', note[3])
+print('Описание: ', note[4])
+print('Статус: ', note[5])
+print([note[6],
+       note[7],
+       note [8]])
